@@ -1,0 +1,36 @@
+.card {
+	width: 280px;
+	height: 200px;
+	margin: -10px;
+}
+
+.card-text {
+	font-size: 13px;
+	margin-left: 20px;
+	margin-top: 17px;
+}
+
+.text {
+	margin-left: 20px;
+	margin-top: 6px;
+	height: 27px;
+	width: 240px;
+	border: none;
+	border: solid 1px;
+	border-color: #e1dde1;
+	border-radius: 6px;
+}
+
+.SubmitButton {
+	margin-top: 14px;
+	width: 240px;
+	height: 27px;
+	border: none;
+	border: solid 1px;
+	border-color: #00983d;
+	border-radius: 6px;
+	background-color: #00a54a;
+	color: white;
+	font-size: 13px;
+	font-weight: bold;
+}

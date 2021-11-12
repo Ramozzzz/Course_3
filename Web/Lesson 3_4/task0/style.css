@@ -1,0 +1,18 @@
+.SurveyForm{
+	height: 240px;
+    background: #ff8c00;
+    border-color: #ff4500;
+    border-style: solid;
+    padding: 5px;
+    border-radius: 20px;
+}
+
+input[type=text] {
+	width: 200px;
+	margin-left: 10px
+}
+
+input[type=number] {
+	width: 100px;
+	margin-left: 10px
+}

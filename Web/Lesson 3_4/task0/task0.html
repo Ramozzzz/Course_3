@@ -1,0 +1,102 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet">
+    <link crossorigin="anonymous" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css"
+          integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" rel="stylesheet">
+    <title>Task 0</title>
+</head>
+<body style = "background-color: #ffd700">
+<form>
+	<div class = "container">
+		<div class = "row">
+			<div class = "col d-flex justify-content-center">
+				<p style = "font-weight: bold; font-size: 24px; margin-top: 50px">Оценка качества ресторанов быстрого питания</p>
+			</div>
+		</div>
+		<div class = "row">
+			<div class = "col">
+				<p>Данный опрос необходим для того, чтобы выяснить, какие рестораны быстрого питания (такие как McDonalds, KFC и т.п.) пользуются популярностью и почему</p>
+			</div>
+		</div>
+		<div class = "row">
+			<div class = "SurveyForm">
+				<legend style = "font-size: 18px, font-weight: bold">Немного о вас</legend>
+				<div class = "row">
+					<p>Имя</p>
+				</div>
+				<div class = "row">
+					<input type = "text" />
+				</div>
+				<br>
+				<div class = "row">
+					<p>Возраст</p>
+				</div>
+				<div class = "row">
+					<input type="number" min="1" max="100" step="1"/>
+				</div>
+			</div>
+		</div>
+		<br>
+		<div class = "row">
+			<div class = "SurveyForm" style = "height: 260px">
+				<legend style = "font-size: 18px, font-weight: bold">Ваш любимый ресторан фастфуда</legend>
+				<div class = "row">
+					<p>Какой ресторан быстрого питания вы посещаете чаще всего?</p>
+				</div>
+				<div class = "row">
+					<select name="restaurantSelector" style = "width: 160px; margin-left: 10px">
+						<option value="1">Burger King</option>
+						<option value="2">KFC</option>
+						<option value="3">McDonalds</option>
+						<option value="4">Другой</option>
+					</select>
+				</div>
+				<br>
+				<div class = "row">
+					<p>Если вы выбрали вариант "другой" в предыдущем вопросе, напишите название заведения</p>
+				</div>
+				<div class = "row" >
+					<textarea style = "width: 160px; margin-left: 10px"></textarea>
+				</div>
+			</div>
+		</div>
+		<br>
+		<div class = "row">
+			<div class = "SurveyForm" style = "height: 400px">
+				<legend style = "font-size: 18px, font-weight: bold">Оценка ресторана быстрого питания</legend>
+				<div class = "row">
+					<p>Почему вы выбрали именно это заведение?</p>
+				</div>
+				<div class = "row">
+					<label>Качественная еда</label><input type="radio" name="radiochoise_type" value="1" style = "margin-top: -20px"/>
+				</div>
+				<br>
+				<div class = "row">
+					<label>Высокий уровень обслуживания</label><input type="radio" name="radiochoise_type" value="2" style = "margin-top: -20px"/>
+				</div>
+				<br>
+				<div class = "row">
+					<label>Удобное расположение ресторана</label><input type="radio" name="radiochoise_type" value="3" style = "margin-top: -20px"/>			
+				</div>
+				<br><br>
+				<div class = "row">
+					<p>Вы бы посоветовали данное заведение своим друзьям, знакомым и т.д.?</p>
+				</div>
+				<div class = "row">
+					<input type="radio" name="radiochoise_advice" value="true" style = "position: absolute; margin-top: 4px"/><label>Да</label>
+				</div>
+				<br>
+				<div class = "row">
+					<input type="radio" name="radiochoise_advice" value="false" style = "position: absolute; margin-top: 4px"/><label>Нет</label>
+				</div>
+			</div>
+		</div>
+		<br>
+		<input type="submit" value="Отправить" style = "margin-bottom: 20px">
+	</div>
+</form>
+</body>
+</html>

@@ -1,0 +1,71 @@
+<html>
+<head>
+    <meta charset="utf-8"> <title>Опрос</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet">
+    <style>
+    </style>
+
+</head>
+
+<body>
+
+<form>
+    <div class="center">
+        <h2>Оценка качества ресторанов быстрого питания</h2>
+    </div>
+
+    Данный опрос необходим для того, чтобы выяснить, какие рестораны быстрого питания (такие как McDonalds, KFC и т.п.) пользуются популярностью и почему
+    <div class="SurveyForm">
+        <legend>Немного о вас</legend>
+        <table class="MainTable">
+            <tr>
+                <td class="LeftTable"><label>Имя</label></td><td class="RightTable"><input type="text"/></td>
+            </tr>
+            <tr>
+                <td class="LeftTable"><label>Возраст</label></td><td class="RightTable"><input type="number" min="1" max="100" step="1"/></td>
+            </tr>
+        </table>
+    </div>
+    <br>
+
+    <div class="SurveyForm">
+        <legend>Ваш любимый ресторан фастфуда</legend>
+        <table class="MainTable">
+            <tr>
+                <td class="LeftTable"><label>Какой ресторан быстрого питания вы посещаете чаще всего?</label></td>
+				<td class="RightTable">
+					<select name="restaurantSelector">
+						<option value="1">Burger King</option>
+						<option value="2">KFC</option>
+						<option value="3">McDonalds</option>
+						<option value="4">Другой</option>
+					</select>
+				</td>
+            </tr>
+			<br>
+            <tr>
+                <td class="LeftTable"><label>Если вы выбрали вариант "другой" в предыдущем вопросе, напишите название заведения</label></td>
+				<td class="RightTable"><textarea></textarea></td>
+            </tr>
+        </table>
+    </div>
+    <br>
+
+    <div class="SurveyForm">
+        <legend>Оценка ресторана быстрого питания</legend><br>
+        <label>Почему вы выбрали именно это заведение?</label><br>
+        <input type="radio" name="radiochoise_type" value="1"/><label>Качественная еда</label><br>
+        <input type="radio" name="radiochoise_type" value="2"/><label>Высокий уровень обслуживания</label><br>
+        <input type="radio" name="radiochoise_type" value="3"/><label>Удобное расположение ресторана</label><br><br>
+        <label>Вы бы посоветовали данное заведение своим друзьям, знакомым и т.д.?</label><br>
+        <input type="radio" name="radiochoise_advice" value="true"/><label>Да</label><br>
+        <input type="radio" name="radiochoise_advice" value="false"/><label>Нет</label><br>
+    </div>
+    <br>
+    <input type="submit" value="Отправить" class="SubmitButton">
+</form>
+<br>
+
+</body>
+</html>
